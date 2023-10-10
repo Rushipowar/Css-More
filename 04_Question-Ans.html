@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+          body, html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background: rgb(255, 123, 0);
+            background: -moz-linear-gradient(-45deg, rgb(255, 145, 0) 0%, rgba(142, 68, 173, 1) 100%);
+            background: -webkit-linear-gradient(-45deg, rgb(255, 115, 0) 0%, rgba(142, 68, 173, 1) 100%);
+            background: linear-gradient(135deg, rgb(255, 115, 0) 0%, rgba(142, 68, 173, 1) 100%);
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;     
+        }
+        h2{
+            font-size: 25px;
+            margin: 20px 0 0 0;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: #eeeeee;
+        }
+        .content .email{
+            font-size: 20px;
+            font-weight: lighter;
+            color: #eeeeee;
+            margin: 10px;
+            font-style: italic;
+        }
+        .content .des{
+            font-size: 17px;
+            font-weight: light;
+            color: #333333;
+        }
+        .content{
+            width: 100%;
+            max-width: 500px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .container img{
+            width: auto;
+            height: 100%;
+        }
+        .container .image{
+            width: 170px;
+            height: 170px;
+            box-sizing: border-box;
+            border: 4px white solid;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+            animation: float 6s ease-in-out infinite;
+            transition: all 0.7s ease;
+        }
+        .container .image:hover{
+            transform: translateY(-20px);
+        }
+        .content span a {
+            font-size: 21px;
+            color: #cccccc;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .content span a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="Source/My_Image.jpg" alt="Myimage">
+        </div>
+        <div class="content">
+            <h2>Rushikesh Powar</h2>
+            <p class="email">powarrushi02@gmail.com</p>
+            <p class="des">Follow me on:</p>
+            <p>
+                <span><a href="#" target="_blank"></a></span>
+                <span><a href="#" target="_blank"></a></span>
+                <span><a href="#" target="_blank"></a></span>
+                <span><a href="#" target="_blank"></a></span>
+                <span><a href="#" target="_blank"></a></span>
+                <span><a href="#" target="_blank"></a></span>
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>

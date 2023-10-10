@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar: different border-style</title>
+    <style>
+         .navbar{
+        width: 100%;
+        padding: 8px;
+        background-color: rgb(1, 107, 206);
+      }
+      .navbar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+      }
+      .navbar ul li{
+        list-style-type: none;
+        margin-left: 60px;
+      }
+      .navbar ul li a{
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        padding: 8px;
+        text-decoration: none;
+      }
+      .navbar ul li a:hover{
+        color: black;
+        transition: all 0.5s ;
+      }
+
+      /* Navbar Items Border */
+      .navbar ul .dotted{
+        border: 3px white;
+        border-style: dotted;
+      }
+      .navbar ul .double{
+        border: 3px white;
+        border-style: double;
+      }
+      .navbar ul .groove{
+        border: 3px white;
+        border-style: groove;
+      }
+      .navbar ul .ridge{
+        border: 3px white;
+        border-style: ridge;
+      }
+      .navbar ul .solid{
+        border: 3px white;
+        border-style: solid;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="dotted"><a href="#">Home</a></li>
+            <li class="double"><a href="#">About Us</a></li>
+            <li class="groove"><a href="#">Contact</a></li>
+            <li class="ridge"><a href="#">Blog</a></li>
+            <li class="solid"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
